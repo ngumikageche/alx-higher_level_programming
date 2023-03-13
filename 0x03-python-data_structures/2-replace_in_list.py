@@ -8,7 +8,7 @@ def replace_in_list(my_list, idx, element):
         return my_list
     # If idx is out of range (> of number of element in my_list),
     # the function should not modify anything, and returns the original list
-    if idx > list_len:
+    if idx > list_len - 1:
         return my_list
     else:
         my_list[idx] = element
