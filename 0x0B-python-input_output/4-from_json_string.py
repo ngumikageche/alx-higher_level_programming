@@ -1,4 +1,7 @@
 #!/usr/bin/python
+"""Defines a func that conv From JSON string to Object"""
+
+
 import json
 
 
