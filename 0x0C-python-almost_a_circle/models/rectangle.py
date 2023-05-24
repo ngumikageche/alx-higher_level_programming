@@ -11,11 +11,13 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-
-    """Getters and setter for width """
+    
     def get_width(self):
+        """Getters and setter for width """
             return (self.__width)
+        
     def set_width(self, width):
+        """validation of width"""
         if not isinstance(width, int):
             raise TypeError("Width must be an integer")
         if width <= 0:
@@ -27,28 +29,31 @@ class Rectangle(Base):
         return (self.__width)
 
     def set_height(self, width):
+        """Validation of height"""
         if not isinstance(height, int):
             raise TypeError("Height must be an integer")
         if height <= 0:
             raise ValueError("height must be > 0")
         self.__height = height
 
-    """Getters and setter for x """
     def get_x(self):
+        """Getters and setter for x """
         return (self.__x)
 
     def set_x(self, x):
+        """validation of X"""
         if not isinstance(x, int):
             raise TypeError("x must be an integer")
         if x < 0:
             raise ValueError("x must be >= 0")
         self.__x = x
 
-    """Getters and setter for y """
     def get_y(self):
+            """Getters and setter for y """
         return (self.__width)
 
     def set_y(self, y):
+        """ Validation of y"""
         if not isinstance(y, int):
             raise TypeError("y must be an integer")
         if y < 0:
