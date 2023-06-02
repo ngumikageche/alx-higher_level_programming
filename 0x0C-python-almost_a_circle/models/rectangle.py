@@ -5,17 +5,17 @@ from models.base import Base
 
 class Rectangle(Base):
     """body of rectangle"""
-    def __init__(self, width, height, x = 0, y = 0, id = None):
+    def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
-    
+
     def get_width(self):
         """Getters and setter for width """
-            return (self.__width)
-        
+        return (self.__width)
+
     def set_width(self, width):
         """validation of width"""
         if not isinstance(width, int):
@@ -24,8 +24,8 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = width
 
-    """Getters and setter for Height"""
     def get_height(self):
+        """Getters and setter for Height"""
         return (self.__width)
 
     def set_height(self, width):
@@ -49,7 +49,7 @@ class Rectangle(Base):
         self.__x = x
 
     def get_y(self):
-            """Getters and setter for y """
+        """Getters and setter for y """
         return (self.__width)
 
     def set_y(self, y):
@@ -59,4 +59,3 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
-        
