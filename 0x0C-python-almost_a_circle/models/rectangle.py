@@ -25,10 +25,12 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
+    @property
     def get_width(self):
         """Getters and setter for width """
         return (self.__width)
 
+    @width.setter
     def set_width(self, width):
         """validation of width"""
         if not isinstance(width, int):
@@ -37,10 +39,12 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = width
 
+    @property
     def get_height(self):
         """Getters and setter for Height"""
         return (self.__width)
 
+    @height.setter
     def set_height(self, width):
         """Validation of height"""
         if not isinstance(height, int):
@@ -49,10 +53,12 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = height
 
+    @property
     def get_x(self):
         """Getters and setter for x """
         return (self.__x)
 
+    @x.setter
     def set_x(self, x):
         """validation of X"""
         if not isinstance(x, int):
@@ -61,10 +67,12 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
         self.__x = x
 
+    @property
     def get_y(self):
         """Getters and setter for y """
         return (self.__width)
 
+    @y.setter
     def set_y(self, y):
         """ Validation of y"""
         if not isinstance(y, int):
